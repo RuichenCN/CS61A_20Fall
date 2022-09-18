@@ -10,5 +10,13 @@ def falling(n, k):
             n = n -1
             k -= 1
         return m
-y = falling(4, 1)
-print(y)
+
+
+
+def sum_digits(y):
+    sum = 0
+    while y > 9:
+        sum += y % 10
+        y = y // 10
+    return sum + y
+
