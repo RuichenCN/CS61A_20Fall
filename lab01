@@ -1,0 +1,14 @@
+def falling(n, k):
+    if k == 0:
+        return 1
+    elif k == 1:
+        return n
+    else:
+        m = n
+        while k > 1:
+            m *= (n-1)
+            n = n -1
+            k -= 1
+        return m
+y = falling(4, 1)
+print(y)
