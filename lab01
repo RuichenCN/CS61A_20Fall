@@ -20,3 +20,10 @@ def sum_digits(y):
         y = y // 10
     return sum + y
 
+
+def double_eights(n):
+    while n >= 88:
+        if n % 100 == 88:
+            return True
+        n //= 10
+    return False
